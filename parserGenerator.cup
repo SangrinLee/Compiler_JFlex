@@ -1,0 +1,23 @@
+import java_cup.runtime.*;
+
+terminal IF, WHILE, THEN, ELSE, IDENTIFIER, STRING, NUMBER, LT, LE, EQ, NE, GT, GE;
+
+non terminal Object start_symbol, node;
+
+start_symbol ::= start_symbol node | node;
+
+node ::=  IF {: System.out.println("KEYWORD(IF)"); :}
+	| WHILE {: System.out.println("KEYWORD(WHILE)"); :}
+	| THEN {: System.out.println("KEYWORD(THEN)"); :}
+	| ELSE {: System.out.println("KEYWORD(ELSE)"); :}
+	| IDENTIFIER {: System.out.println("IDENTIFIER"); :}
+	| STRING {: System.out.println("STRING"); :}
+	| NUMBER {: System.out.println("NUMBER"); :}
+	| LT {: System.out.println("KEYWORD(LT)"); :}
+	| LE {: System.out.println("KEYWORD(LE)"); :}
+	| EQ {: System.out.println("KEYWORD(EQ)"); :}
+	| NE {: System.out.println("KEYWORD(NE)"); :}
+	| GT {: System.out.println("KEYWORD(GT)"); :}
+	| GE {: System.out.println("KEYWORD(GE)"); :}
+	;
+

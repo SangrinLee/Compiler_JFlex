@@ -1,0 +1,5 @@
+whileABC   then
+k_w_univ_
+<= >
+"COMPILER"
+"kw"""univ\\\"
